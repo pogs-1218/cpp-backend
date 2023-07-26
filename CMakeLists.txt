@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+project(app)
+add_executable(app src/main.cc)
+target_link_libraries(app /usr/local/lib/libboost_thread.so)
